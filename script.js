@@ -5,9 +5,14 @@ var tips = ["Read a book",
 "Talk a walk around your neighborhood",
 "Do crossword puzzles",
 "Play online memory games",
-"Delete social media apps",
 "Start a planner",
 "Drink a cup of tea",
+"Turn off your notifications",
+"Use apps to limit idle browsing",
+"Schedule a study time everyday",
+"Listen to calm music",
+"Get enough sleep",
+"Do yoga",
 "Take a few hours off of social media"
 ];
 
@@ -71,8 +76,8 @@ function giveTip(){
 function popup(){
   //instagram, twitter, tiktok
   var num = Math.floor(Math.random()*6);
-  var x = Math.floor((Math.random()* window.innerWidth)-(0.10*window.innerWidth));
-  var y = Math.floor((Math.random()* window.innerHeight)-(0.07*window.innerHeight));
+  var x = Math.floor((Math.random()* window.innerWidth)-(0.05*window.innerWidth));
+  var y = Math.floor((Math.random()* window.innerHeight)-(0.0*window.innerHeight));
   // console.log(x);
   // console.log(y);
   console.log(num);
@@ -101,7 +106,7 @@ function popup(){
   let newPopup = document.createElement("div");
   newPopup.classList.add('distractionPopup');
   newPopup.style.left = x+'px';
-  newPopup.style.top = y+'px';
+  newPopup.style.top = y-230+'px';
   newPopup.style.zIndex = ['-30'];
   let topBorder = document.createElement("p");
   topBorder.classList.add('textDistraction');

@@ -8,7 +8,7 @@ body{
   height: 100vh;
   width: 100vw;
   background-color: #41EAD4;
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 #layout{
@@ -127,8 +127,8 @@ h1{
   border: 4px dotted white;
 }
 .distractionPopup{
-  height: 15vw;
-  width: 20vw;
+  height: 230px;
+  width: 300px;
   position: absolute;
   background-color: #FCF4E6FF;
 
@@ -227,4 +227,44 @@ h3{
   margin: 5% 15% 5% 15%;
   word-spacing: 1px;
   width: 60%;
+}
+
+@media only screen and (max-width: 1300px){
+  /* distraction button popups */
+
+  #distraction-button{
+    height: 43%;
+    width: 75%;
+    bottom: 2%;
+    right: 2%;
+    padding: 10px;
+
+    font-size: 20px;
+  }
+  .menuContentItem, #tip-button{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  body{
+    background-color: black;
+    overflow-x: hidden;
+  }
+  /* distraction button popups */
+
+  #distraction-button{
+    height: 43%;
+    width: 75%;
+    bottom: 2%;
+    right: 2%;
+    padding: 10px;
+
+    font-size: 15px;
+  }
+  .menuContentItem, #tip-button{
+    font-size: 15px;
+    width: 400px;
+    margin-right: -50px;
+  }
 }
